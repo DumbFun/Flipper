@@ -1,0 +1,59 @@
+body {
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  background-image: linear-gradient(45deg, #ffb26d, #fff5ec);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 840px;
+    height: 440px; 
+    background-size: cover;
+      border-radius: 5px; /* rounded corners */
+    overflow: hidden; /* ensures cards don't spill out of the rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* soft shadow */
+
+}
+
+.card {
+    width: 210px;
+    height: 110px;
+    transition: background-color 0s, color 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em; /* Size of the numbers */
+    font-weight: bold; /* Making the numbers bold */
+    color: #fff; /* Color of the numbers */
+  transform-style: preserve-3d;
+    perspective: 1000px; /* depth perception for 3D transform */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
+    border-radius: 5px; /* rounded corners for cards */
+}
+
+.card.flipped {
+    background-color: transparent;
+  color: transparent;
+}
+
+.color1 { background-color: #0000e0; }
+.color2 { background-color: #e00000; }
+.color3 { background-color: #00c700; }
+.color4 { background-color: #e07000; }
+.color5 { background-color: #e00000; }
+.color6 { background-color: #00c700; }
+.color7 { background-color: #e07000; }
+.color8 { background-color: #0000e0; }
+.color9 { background-color: #00c700; }
+.color10 { background-color: #e07000; }
+.color11 { background-color: #0000e0; }
+.color12 { background-color: #e00000; }
+.color13 { background-color: #e07000; }
+.color14 { background-color: #0000e0; }
+.color15 { background-color: #e00000; }
+.color16 { background-color: #00c700; }
